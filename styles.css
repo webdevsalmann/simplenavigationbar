@@ -1,0 +1,51 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+}
+
+ul.nav-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ul.nav-menu li a:hover {
+    background-color: #cda70f;
+    color: #fff;
+}
+
+/* Additional Styling (You can customize this) */
+ul.nav-menu li:last-child a {
+    border-right: none;
+}
+
+ul.nav-menu li:first-child a {
+    border-left: none;
+}
